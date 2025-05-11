@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Riverdale High</title>
+    </head>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+        }body {
+      background-color: white;
+      color: black;
+    }
+    
+    header {
+      background-color: black;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      color: white;
+      font-weight: bold;
+    }
+    
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-grow: 1;
+      justify-content: center;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .register-button {
+      background-color: gold;
+      color: black;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .hero {
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .hero img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+    
+    .hero h1 {
+      margin-top: 1.5rem;
+      font-size: 2.5rem;
+      color: black;
+    }
+    
+    .hero p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    
+    .get-started {
+      margin-top: 2rem;
+      background-color: gold;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .get-started:hover {
+      background-color: black;
+      color: gold;
+    }
+    
+      </style>
+      <header>
+        <div class="logo">RIVERDALE ELEMENTARY</div>
+        <nav>
+          <a href="#about">About</a>
+          <button class="register-button">Register New Student</button>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>  <section class="hero">
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Children holding hands">
+        <h1>RIVERDALE HIGH</h1>
+        <p>Welcome to  <span style="color: darkorange;">RIVERDALE ELEMENTARY</span>where our teachers mould your childen into mavericks.</p>
+        <button class="get-started" onclick="getStarted()">Get Started</button>
+      </section>  <script>
+        function getStarted() {
+          window.location.href = "#register";
+        }
+      </script>
+    </body>
+    </html>
