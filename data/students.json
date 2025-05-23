@@ -1,0 +1,115 @@
+[
+    {
+      "name": "Margaret Akpo",
+      "age": 22,
+      "subjects": ["Math", "Physics", "Chemistry"],
+      "attendance": 92,
+      "progress": 85
+    },
+    {
+      "name": "John Smith",
+      "age": 22,
+      "subjects": ["History", "Literature", "Philosophy"],
+      "attendance": 87,
+      "progress": 78
+    },
+    {
+      "name": "Sarah Johnson",
+      "age": 19,
+      "subjects": ["Physics", "Chemistry", "Biology"],
+      "attendance": 95,
+      "progress": 90
+    },
+    {
+      "name": "David Brown",
+      "age": 21,
+      "subjects": ["Math", "Computer Science", "Statistics"],
+      "attendance": 90,
+      "progress": 82
+    },
+    {
+      "name": "Emily Davis",
+      "age": 20,
+      "subjects": ["English", "History", "Art"],
+      "attendance": 93,
+      "progress": 88
+    },
+    {
+      "name": "Michael Johnson",
+      "age": 23,
+      "subjects": ["Economics", "Political Science", "Sociology"],
+      "attendance": 90,
+      "progress": 84
+    },
+    {
+      "name": "Olivia Garcia",
+      "age": 22,
+      "subjects": ["Biology", "Chemistry", "Environmental Science"],
+      "attendance": 94,
+      "progress": 89
+    },
+    {
+      "name": "Michael Brown",
+      "age": 21,
+      "subjects": ["Math", "Computer Science", "Statistics"],
+      "attendance": 89,
+      "progress": 82
+    },
+    {
+      "name": "Emily Davis",
+      "age": 20,
+      "subjects": ["English", "History", "Art"],
+      "attendance": 93,
+      "progress": 88
+    },
+    {
+      "name": "James Wilson",
+      "age": 23,
+      "subjects": ["Economics", "Political Science", "Sociology"],
+      "attendance": 90,
+      "progress": 84
+    },
+    {
+      "name": "Olivia Garcia",
+      "age": 22,
+      "subjects": ["Biology", "Chemistry", "Environmental Science"],
+      "attendance": 94,
+      "progress": 89
+    },
+    {
+      "name": "Liam Martinez",
+      "age": 21,
+      "subjects": ["Math", "Computer Science", "Statistics"],
+      "attendance": 88,
+      "progress": 80
+    },
+    {
+      "name": "Emma Taylor",
+      "age": 20,
+      "subjects": ["English", "History", "Art"],
+      "attendance": 92,
+      "progress": 87
+    },
+    {
+      "name": "Noah Anderson",
+      "age": 23,
+      "subjects": ["Economics", "Political Science", "Sociology"],
+      "attendance": 91,
+      "progress": 84
+    },
+    {
+      "name": "David Wilson",
+      "age": 23,
+      "subjects": ["Economics", "Political Science", "Sociology"],
+      "attendance": 91,
+      "progress": 84
+    },
+    {
+      "name": "Sophia Martinez",
+      "age": 22,
+      "subjects": ["Biology", "Chemistry", "Environmental Science"],
+      "attendance": 94,
+      "progress": 89
+    }
+  ]
+  

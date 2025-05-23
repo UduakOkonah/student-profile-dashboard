@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="styles/dashboard.css" />
+  <script src="script/dashboard.js" defer></script>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <div class="logo">OpenSpace</div>
+    <nav class="nav">
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="student.html">Students</a>
+      <a href="#">Attendance</a>
+      <a href="styles/dashboard.css">Reports</a>
+      <a href="#">Settings</a>
+      <a href="#">Help</a>
+    </nav>
+  </aside>
+
+  <!-- Main Dashboard Content -->
+  <main class="dashboard">
+    <!-- Top Navigation -->
+    <header class="top-nav">
+      <div class="search">
+        <input type="text" placeholder="Search students..." />
+      </div>
+      <div class="profile">
+        <span class="notification"></span>
+        <span class="user-name">Welcome, Admin</span>
+        <img src="img/avatar.png" alt="User Avatar" class="avatar" />
+      </div>
+    </header>
+
+    <!-- Dashboard Overview Cards -->
+    <section class="overview">
+      <div class="card total-students">
+        <h3>Total Students</h3>
+        <p id="total-students">--</p>
+      </div>
+      <div class="card avg-attendance">
+        <h3>Avg Attendance</h3>
+        <p id="avg-attendance">--%</p>
+      </div>
+      <div class="card active-courses">
+        <h3>Active Courses</h3>
+        <p id="active-courses">--</p>
+      </div>
+      <div class="card avg-progress">
+        <h3>Avg Progress</h3>
+        <p id="avg-progress">--%</p>
+      </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+      <button onclick="location.href='form.html'">Add New Student</button>
+      <button>Generate Report</button>
+      <button>Take Attendance</button>
+    </section>
+
+    <!-- Student Summary Table -->
+    <section class="student-list">
+      <h2>Student Overview</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Subjects</th>
+            <th>Attendance</th>
+            <th>Progress</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="student-table-body">
+          <!-- JS will render students from JSON here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 EduTrack System | Version 1.0</p>
+    </footer>
+  </main>
+
+</body>
+</html>

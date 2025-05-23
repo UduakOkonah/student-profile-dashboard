@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Reports</title>
+  <link rel="stylesheet" href="styles/dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script/dashboard.js" defer></script>
+  <script src="script/report.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">OpenSpace</div>
+    <nav class="nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="students.html">Students</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="report.html" class="active">Reports</a>
+      <a href="settings.html">Settings</a>
+      <a href="#">Help</a>
+    </nav>
+  </aside>
+
+  <main class="report-page">
+    <header class="top-nav">
+      <h1>Student Reports</h1>
+      <div class="filters">
+        <input type="text" placeholder="Search student..." id="searchInput">
+        <select id="subjectFilter">
+          <option value="all">All Subjects</option>
+        </select>
+        <input type="month" id="reportMonth">
+      </div>
+    </header>
+
+    <section class="summary">
+      <div class="card">Total Students: <span id="report-total"></span></div>
+      <div class="card">Avg Attendance: <span id="report-attendance"></span>%</div>
+      <div class="card">Avg Progress: <span id="report-progress"></span>%</div>
+    </section>
+
+    <section class="charts">
+      <canvas id="attendanceChart"></canvas>
+      <canvas id="progressChart"></canvas>
+    </section>
+
+    <section class="report-table">
+      <h2>Detailed Report</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Attendance</th>
+            <th>Progress</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="reportTableBody"></tbody>
+      </table>
+      <button id="exportCSV">Export CSV</button>
+    </section>
+
+    <footer>
+      <p>Report generated on <span id="reportDate"></span></p>
+    </footer>
+  </main>
+</body>
+</html>
