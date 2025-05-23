@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#909bec;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ 
+}
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color:white;
+    margin-top:70px;
+    padding:25px;
+    line-height: 20px;
+    border-radius: 8px;
+    }
+ .container-header{
+    font-size: 1.5em;
+    font-weight:500px;
+}
+.container .form{
+    margin-top: 30px;
+}
+
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+input-box label{
+    color: aliceblue;
+}
+.form :where(.input-box input, .select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline:none;
+    border: 1px solid ;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 1rem;
+    margin-top:8px ;
+
+}
+
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+
+/* responsivenes */
+@media screen and (max-width: 500px){
+   .form .column{
+        flex-wrap: wrap;
+    }    
+}
+
+.form :where(.gender-option, .gender){
+    display:flex;   
+    align-items:center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender{
+    column-gap:5px;
+    
+}
+
+.form :where(.gender input, .gender label){
+
+}
+.form .gender-box{
+    margin-top: 20px;
+}
+.gender-box h3{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.form :where(.gender-option, .gender){
+
+}
+ .address :where(input, .select-box){
+margin-top: 15px;
+        
+ }
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color:#707070
+}
+
+.form button{
+    height:55px ;
+    width: 100% ;
+    background-color: rgb(130, 106, 251);
+    color: #fff;
+    font-size: 1rem; ;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.form button:hover{
+    background-color: rgb( rgb43, 43, 235);
+}
+.gender input{
+    accent-color: rgb(130, 106 ,251);
+} 
+
+.gender label{
+    color: #707070;
+}
