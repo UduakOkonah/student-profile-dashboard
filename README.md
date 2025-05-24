@@ -65,11 +65,15 @@ student-profile-dashboard/
 
 ## 🤝 Contributors
 
-- [Your Name] (Team Lead)
-- [Teammate 1]
-- [Teammate 2]
-- [Teammate 3]
-
+- Uduakobong L. Okonah (Team Lead)
+- Oludayo Oluboyede
+- Grace Bola
+- Shuaib Olaitan
+- Oluseyi Olalere
+- Hikimat Aminu
+- Shode sulaiman
+- Victoria Alayemie
+- John alabi
 ---
 
 ## 📌 License

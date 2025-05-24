@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Students - EduTrack</title>
+  <link rel="stylesheet" href="styles/dashboard.css" />
+  <script src="script/dashboard.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">OpenSpace</div>
+    <nav class="nav">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="student.html" class="active">Students</a>
+      <a href="attendance.html">Attendance</a>
+      <a href="report.html">Reports</a>
+      <a href="settings.html">Settings</a>
+      <a href="#">Help</a>
+    </nav>
+  </aside>
+
+  <main class="dashboard">
+    <header class="top-nav">
+      <div class="search">
+        <input type="text" placeholder="Search students..." />
+      </div>
+      <div class="profile">
+        <span class="notification"></span>
+        <span class="user-name">Welcome, Admin</span>
+        <img src="img/avatar.png" alt="User Avatar" class="avatar" />
+      </div>
+    </header>
+
+    <section class="student-list">
+      <div class="student-header">
+        <h2>All Students</h2>
+        <button onclick="location.href='form.html'">+ Add Student</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Subjects</th>
+            <th>Attendance</th>
+            <th>Progress</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="student-table-body">
+          <!-- Students from JSON will be rendered here -->
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>© 2025 EduTrack System | Version 1.0</p>
+    </footer>
+  </main>
+</body>
+</html>
